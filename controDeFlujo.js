@@ -108,3 +108,98 @@ if (hora < 12){
     console.log("Buenas noches, ya vamos a mimir")
 }
 
+
+/* Switch
+Esta condicional nos pemite hacer multiples operaciones y tomar decisiones en funcion de distintos estados de las variables. Evalua una expresion comparando el valor de un dato o variable, y ejecutando la instruccion asociada a ese caso.
+
+- case: evalua el caso o condicion asociado que dispara un bloque de codigo
+- Break: termina el proceso sin que tengamos que pasar por todas las iteraciones o casos.
+- Default: Termina el proceso en caso de que ninguna de las evaluaciones sea la correcta (similar al else).
+
+switch (expresion o condicion){
+    case valor1:
+        //valor que se ejecuta si la condiciones es igual a valor 1
+    break;
+
+    case valor2:case valor1:
+        //valor que se ejecuta si la condiciones es igual a valor 2
+    break;
+    
+    case valor3:
+        //valor que se ejecuta si la condiciones es igual a valor 3
+    break;
+
+    case valor4:
+        //valor que se ejecuta si la condiciones es igual a valor 4
+    break;
+    
+    default:
+        //Ingresaste un piso incorrecto (bloque de codigo que se ejecuta si no se cumple con ninguna de las condiciones anteriores)
+    
+}
+*/
+
+//Ejemplo de switch
+
+let pisoDestino = prompt("ingresa el piso al que quieras ir (1 al 5)");
+
+switch(pisoDestino) {
+    //Para jugar con nuestros datos el tipo de dato debe coincidir para que se ejecute correctamente
+    case "1":
+    console.log ("vamos a piso 1 (suena música de fondo)");
+    break;
+
+    case "2":
+        console.log ("vamos a piso 2 (suena música de fondo)");
+        break;
+    
+    case "3":
+        console.log ("vamos a piso 3 (suena música de fondo)");
+        break;
+
+    case "4":
+     console.log ("vamos a piso 4 (suena música de fondo)10");
+       break;
+
+    case "5":
+    console.log ("vamos a piso 5 (suena música de fondo");
+        break;
+
+        default:
+            console.log ("Ingresaste un piso que no es valido")
+
+}
+
+var elementoEvolucion = prompt ("Ingresa el elemento al que deseas que evolucione tu Eevee ")
+
+switch (elementoEvolucion) {
+
+    case "Fuego":
+        console.log("Tu Eevee ha evolucionado a Flareon")
+        break;
+
+    case "Trueno":
+        console.log("Tu Eevee ha evolucionado a Jolteon")
+        break;
+    case "Agua":
+        console.log("Tu Eevee ha evolucionado a Vaporeon")
+        break;
+    case "Sombra":
+        console.log("Tu Eevee ha evolucionado a Umbreon")
+        break;
+    case "Hierba":
+        console.log("Tu Eevee ha evolucionado a Leafeon")
+        break;
+    case "Psiquico":
+        console.log("Tu Eevee ha evolucionado a Umbreon")
+        break;
+    case "Hielo":
+        console.log("Tu Eevee ha evolucionado a Glaceon")
+        break;
+    case "Hada":
+        console.log("Tu Eevee ha evolucionado a Sylveon")
+        break;
+    default:
+        console.log("Ese no es un elemento, introduzca de nuevo")
+}
+
